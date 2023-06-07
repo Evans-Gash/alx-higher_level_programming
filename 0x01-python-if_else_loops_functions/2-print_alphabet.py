@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"Print alphabets in small letters, there should be no new line."
-for i in range(97, 123):
-    print(chr(i), end='')
+"""Print the alphabets in small letters, there shouldn't be a new line after."""
+def print_alphabet():
+    for letter in range(97, 123):
+        print("{}".format(chr(letter)), end="")
 
-print()
+if __name__ == "__main__":
+    print_alphabet()
