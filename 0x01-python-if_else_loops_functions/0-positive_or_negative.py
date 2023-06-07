@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10, 10)
+
 def check_number(number):
     if number > 0:
         return "{} is positive".format(number)
@@ -10,6 +11,5 @@ def check_number(number):
         return "{} is negative".format(number)
 
 if __name__ == "__main__":
-    number = int(input("Enter a number: "))
     result = check_number(number)
     print(result)
