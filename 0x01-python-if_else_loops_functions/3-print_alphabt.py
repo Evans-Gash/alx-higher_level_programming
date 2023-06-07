@@ -4,5 +4,6 @@ def print_alphabet():
         if chr(letter) != 'q' and chr(letter) != 'e':
             print("{}".format(chr(letter)), end="")
 
+
 if __name__ == "__main__":
     print_alphabet()
