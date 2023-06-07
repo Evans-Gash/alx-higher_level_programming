@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""Print the alphabets in small letters, there shouldn't be a new line after.""
+"""Print the alphabets in small letters, there shouldn't be a new line."""
 
 
 def print_alphabet():
