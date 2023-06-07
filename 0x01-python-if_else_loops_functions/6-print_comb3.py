@@ -5,5 +5,6 @@ def print_combinations():
             print("{}{}".format(digit1, digit2), end=", ")
     print("89")
 
+
 if __name__ == "__main__":
     print_combinations()
