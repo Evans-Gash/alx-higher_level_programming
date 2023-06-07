@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def print_tebahpla():
-    """Print the alphabet in reverse order alternating upper- and lower-case."""
+    """Print the alphabet in reverse order alternating CAPS & Small Letters."""
     i = 0
     for c in range(ord('z'), ord('a') - 1, -1):
         print("{}".format(chr(c - i)), end="")
