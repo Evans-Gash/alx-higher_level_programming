@@ -5,7 +5,3 @@ def print_numbers():
             print("{}".format(number))
         else:
             print("{:02}".format(number), end=", ")
-
-
-if __name__ == "__main__":
-    print_numbers()
