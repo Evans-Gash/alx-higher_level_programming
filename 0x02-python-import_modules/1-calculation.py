@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 
-a = 10
-b = 5
+if __name__ == "__main__":
+    from calculator_1 import add, sub, mul, div
 
-from calculator_1 import add, subtract, multiply, divide
+    a = 10
+    b = 5
 
-sum_result = add(a, b)
-diff_result = subtract(a, b)
-prod_result = multiply(a, b)
-quot_result = divide(a, b)
+    sum_result = add(a, b)
+    diff_result = sub(a, b)
+    prod_result = mul(a, b)
+    quot_result = div(a, b)
 
-print("Sum: {}".format(sum_result))
-print("Difference: {}".format(diff_result))
-print("Product: {}".format(prod_result))
-print("Quotient: {}".format(quot_result))
+    print("{} + {} = {}".format(a, b, sum_result))
+    print("{} - {} = {}".format(a, b, diff_result))
+    print("{} * {} = {}".format(a, b, prod_result))
+    print("{} / {} = {}".format(a, b, quot_result))
