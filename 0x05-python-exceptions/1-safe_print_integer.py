@@ -1,17 +1,7 @@
 #!/usr/bin/python3
-
-def print_integer_safely(num):
-    """Print an integer safely using string conversion.
-
-    Args:
-        num (int): The integer to print.
-
-    Returns:
-        Returns True if the integer was successfully printed.
-        Returns False if a TypeError or ValueError occurs.
-    """
+def safe_print_integer(value):
     try:
-        print(str(num))
+        print("{:d}".format(value))
         return (True)
     except (TypeError, ValueError):
         return (False)
