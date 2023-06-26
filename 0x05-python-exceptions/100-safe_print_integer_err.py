@@ -3,21 +3,10 @@
 import sys
 
 
-def print_integer_safely(value):
-    """Prints an integer using str().
-
-    If a ValueError occurs, an error message is printed to standard error.
-
-    Args:
-        value (int): The integer to print.
-
-    Returns:
-        Returns True if the integer was successfully printed.
-        Returns False if a TypeError or ValueError occurs.
-    """
+def safe_print_integer_err(value):
     try:
-        print(str(value))
+        print("{:d}".format(value))
         return (True)
-    except (TypeError, ValueError) as e:
-        print("Error: {}".format(e), file=sys.stderr)
+    except (TypeError, ValueError):
+        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return (False)
