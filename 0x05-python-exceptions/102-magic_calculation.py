@@ -1,24 +1,15 @@
 #!/usr/bin/python3
 
-def perform_magic_calculation(a, b):
-    """
-    Perform a magic calculation using given values a and b.
+def magic_calculation(a, b):
 
-    Args:
-        a (int): The first value.
-        b (int): The second value.
+    result = (Zero)
 
-    Returns:
-        The result of the magic calculation.
-    """
-    result = 0
     for i in range(1, 3):
         try:
             if i > a:
-                raise ValueError('Invalid value for a')
-            else:
-                result += a ** b / i
-        except ValueError:
-            result = b + a
+                raise Exception('Too far')
+            result += a ** b / i
+        except Exception:
+            result = (b + a)
             break
     return (result)
