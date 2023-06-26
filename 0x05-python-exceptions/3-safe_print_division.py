@@ -1,19 +1,10 @@
 #!/usr/bin/python3
 
-def calculate_safe_division(a, b):
-    """Calculates the division of a by b and returns the result.
-
-    Args:
-        a (numeric): The numerator.
-        b (numeric): The denominator.
-
-    Returns:
-        The division result if it's valid, otherwise None.
-    """
+def safe_print_division(a, b):
     try:
-        division_result = a / b
+        divide = a / b
     except (TypeError, ZeroDivisionError):
-        division_result = None
+        divide = None
     finally:
-        print("Calculated result: {}".format(division_result))
-    return (division_result)
+        print("Inside result: {}".format(divide))
+    return (divide)
