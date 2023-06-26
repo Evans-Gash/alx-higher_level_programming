@@ -3,20 +3,11 @@
 import sys
 
 
-def execute_function_safely(func, *args):
-    """Executes a function safely.
-
-    Args:
-        func: The function to execute.
-        args: Arguments for the function.
-
-    Returns:
-        If an error occurs - None.
-        Otherwise - the result of the function call.
-    """
+def safe_function(fct, *args):
     try:
-        result = func(*args)
-        return (result)
+        gash = fct(*args)
     except Exception as e:
-        print("Error: {}".format(e), file=sys.stderr)
+        print("Exception: {}".format(e), file=sys.stderr)
         return (None)
+    else:
+        return (gash)
