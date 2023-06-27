@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 
-""" Create a class named Square that explains a square by: (based on 1-square.py)."""
+""" Create a class named Square that explains a square by:-
+    -(based on 1-square.py)."""
 
 
 class Square:
