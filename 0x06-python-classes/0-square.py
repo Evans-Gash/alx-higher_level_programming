@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""An empty class named Square is created in a script, which defines a square"""
+"""An empty class named Square is created in a script, which defines-
+   -a square"""
 
 
 class Square:
