@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 
+""" Write a class Square that defines a square by: (based on 1-square.py)."""
 
-""" Create a class named Square that provides a definition for a square,-
-    -utilizing the code from the file "0-square.py"."""
 
 class Square:
-    """Reps a square."""
+    """Represent a square."""
 
     def __init__(self, size=0):
-        """Initializes a new Square.
+        """Initialize a new Square.
         Args:
             size (integer): The size of the new square.
         """
@@ -20,3 +19,5 @@ class Square:
 
     def area(self):
         """Returns the current square area"""
+
+        return (self.__size * self.__size)
