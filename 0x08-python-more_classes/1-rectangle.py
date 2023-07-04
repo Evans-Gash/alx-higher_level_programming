@@ -1,21 +1,21 @@
 #!/usr/bin/python3
-"""Defines a CustomRectangle class."""
+"""Defines a Rectangle class."""
 
-class CustomRectangle:
-    """Represent a rectangle with width and height."""
+
+class Rectangle:
+    """Represent an empty rectangle."""
     def __init__(self, width=0, height=0):
-        """Initialize a new CustomRectangle.
-
+        """Initialize a new rectangle.
         Args:
-            width (int): The width of the CustomRectangle.
-            height (int): The height of the CustomRectangle.
+            width(int): The width of the rectangle
+            height(int): The height of the rectangle
         """
         self.height = height
         self.width = width
 
     @property
     def width(self):
-        """Get or set the width of the CustomRectangle."""
+        """Get/Set the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -28,7 +28,7 @@ class CustomRectangle:
 
     @property
     def height(self):
-        """Get or set the height of the CustomRectangle."""
+        """Get/Set the height of the rectangle."""
         return self.__height
 
     @height.setter
