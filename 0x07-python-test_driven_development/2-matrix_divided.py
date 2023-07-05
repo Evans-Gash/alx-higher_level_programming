@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 
-
 def matrix_divided(matrix, div):
-    
     """ A function that divides all elements of a matrix
-    
     Args:
         matrix(list): A list of lists of integers or floats
         div (integer/float): The divisor
@@ -16,7 +13,6 @@ def matrix_divided(matrix, div):
     Returns:
         Anew matrix representing the result of the division.
     """
-    
     if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(row, list) for row in matrix) or
             not all((isinstance(ele, int) or isinstance(ele, float))
