@@ -1,3 +1,10 @@
---Shows all the cities of Carlifornia
--- Results are ordered by smallest to largest cities.id.
-SELECT id, name FROM cities WHERE state_id = 1 ORDER BY cities.id ASC;
+-- Lists all cities of CA in the database hbtn_0d_usa.
+-- Results are ordered by ascending cities.id.
+SELECT `id`, `name`
+  FROM `cities`
+ WHERE `state_id` IN
+       (SELECT `id`
+	        FROM `states`
+	       WHERE `name` = "California")
+ORDER BY `id`;
+ 7 changes: 7 additions & 0 deletions7 
