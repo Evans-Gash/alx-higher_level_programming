@@ -1,4 +1,4 @@
 0x0B. Python - Input/Output
-13 Tasks
+13 Mandatory Tasks
 2 Advanced Tasks
-commit - "Zaminamina"
+Commit 'Pushing P'
