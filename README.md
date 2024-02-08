@@ -1,6 +1,3 @@
-Sure, here's the updated version of the README.md file without the "Contributing" section:
-
-```markdown
 # ALX Higher Programming Repository
 
 Welcome to the ALX Higher Programming Repository! This repository contains various projects and assignments completed during the ALX Higher Programming program.
